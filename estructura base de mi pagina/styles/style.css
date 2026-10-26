@@ -1,0 +1,295 @@
+/* tipo desde google fonts: el @import SIEMPRE va primero en el archivo */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+body {
+  margin: 0 16px;
+  background-color: rgb(142, 182, 155);
+  font-family: "Roboto", sans-serif;
+}
+
+/*header y footer*/
+header { 
+  padding: 32px;
+  text-align: center;
+}
+
+/*
+header nav{
+  display: grid;
+  grid-template-areas: 
+  "logo logo logo logo logo logo"
+  "left-ul left-ul left-ul right-ul right-ul right-ul";
+  grid-template-rows: 50px 30px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px; 
+}
+
+.left-ul {
+  grid-area: left-ul;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.right-ul {
+  grid-area: right-ul;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a:hover {
+  color:rgb(0, 128, 0)
+}
+*/
+.bg-nav-mio{
+  background-color: rgb(69, 69, 219);
+}
+
+.mb-mio{
+  border-color: blue;
+  background-color: aqua;
+}
+
+/*decoracion*/
+.puntitos li a {
+  list-style: none;
+}
+
+section {
+  padding: 0 2rem 1rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  color: rgb(211, 199, 173) ;
+}
+
+h2 {
+  color: rgb(31, 129, 133) ;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+/*titulo*/
+.titulo {
+  color: rgb(211, 199, 173);
+  text-decoration: underline;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+/*subtitulo*/
+.sub {
+  color: rgb(11, 43, 38);
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/*parrafos*/
+p {
+  text-align: center;
+}
+
+.copy:hover{
+  color: rgb(5, 5, 250);
+}
+
+
+.imagenes {
+  border: 5px solid rgb(19, 107, 50);
+  border-radius: 16px;
+}
+
+.producto {
+  border: 0.5rem solid  rgb(19, 107, 50);
+  border-radius: 16px;
+}
+
+.descripcion {
+  text-align: start;
+  text-decoration: none;
+  border: 0.3rem solid rgb(255, 255, 0);
+  border-radius: 16px;
+}
+
+.precio {
+  text-align: start;
+  text-decoration: underline solid rgb(255, 0, 0);
+}
+
+.persona {
+  border: 5px solid rgb(19, 107, 50) ;
+  border-radius: 16px;
+}
+
+.nombre {
+  text-align: start;
+}
+
+button{
+  background-color: rgb(197, 197, 72);
+}
+
+button:hover{
+  background-color: rgb(252, 2, 2);
+}
+
+/*grillas*/
+
+.grid-reseña{
+  border: 1px solid rgb(0, 0, 0);
+  height: auto;
+
+  display: grid;
+  /*distintas formas*/
+  /*grid-template-columns: 200px 200px 200px;*/
+  /*grid-template-columns: repeat(2, 200px);*/
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: repeat(3, 300px);
+  justify-content: space-evenly; 
+  align-content: space-evenly;
+
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.grid-area{
+  border: solid 5px rgb(0, 128, 0) ;
+  border-radius: 16px;
+  width: 100%;
+  height: 200px;
+}
+
+.hijo {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.grid-inicio{
+  border: 1px solid rgb(0, 0, 0);
+  height: auto;
+
+  display: grid;
+  /*distintas formas*/
+  /*grid-template-columns: 200px 200px 200px;*/
+  /*grid-template-columns: repeat(2, 200px);*/
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: repeat(2, 300px);
+  justify-content: space-evenly; 
+  align-content: space-evenly;
+
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.grid-index{
+  border: 3px solid rgb(255, 0, 0);
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.niño-1{
+  justify-self: center;
+  align-self: flex-start ;
+}
+
+.niño-2{
+  justify-self: center;
+  align-self: flex-end;
+}
+
+/*Breakpoints*/
+/*Breakpoint mobile: 500px*/
+/*Breakpoint tablet 1024px*/
+/*Breakpoint XXL 1400px*/
+
+/*Mobile*/
+@media (max-width: 500px){
+  body{
+    margin: 0 16px;
+    background-color: rgb(0, 255, 255);
+  }
+  header{
+    padding: 32px;
+  }
+  header nav{
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo logo logo logo"
+    "left-ul left-ul left-ul rigth-ul rigth-ul rigth-ul";
+    grid-template-rows: 100px 30px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 29px;
+  }
+  .left-ul{
+    grid-area: left-ul;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .logo{
+    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .right-ul{
+    grid-area: rigth-ul;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  footer{
+    margin-top: 80px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
